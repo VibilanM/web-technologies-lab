@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Validation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+
+    <!-- Main Content -->
+
+    <main>
+
+        <section class="container">
+
+            <form id="registrationForm">
+
+                <!-- Name -->
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name">
+                </div>
+
+                <!-- Email -->
+
+                <div class="form-group">
+                    <label for="email">Email ID</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email">
+                </div>
+
+                <!-- Phone -->
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="text"
+                        id="phone"
+                        placeholder="Enter your phone number">
+                </div>
+
+                <!-- Gender -->
+
+                <div class="form-group">
+
+                    <label>Gender</label>
+
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+
+                </div>
+
+                <!-- Username -->
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Enter username">
+                </div>
+
+                <!-- Password -->
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter password">
+                </div>
+
+                <!-- Confirm Password -->
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Re-enter password">
+                </div>
+
+                <!-- Buttons -->
+
+                <div class="buttons">
+
+                    <button type="submit">
+                        Submit
+                    </button>
+
+                    <button type="reset">
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>CS3801 - Web Technologies Lab</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
