@@ -27,7 +27,7 @@ form.addEventListener("submit", function (event) {
 
     const phoneRegex = /^[0-9]{10}$/;
 
-    const usernameRegex = /^[A-Za-z0-9]{8}$/;
+    const usernameRegex = /^[A-Za-z0-9]{5,20}$/;
 
     const passwordRegex =
         /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&^#])[A-Za-z\d@$!%*?&^#]{8,}$/;
@@ -63,7 +63,7 @@ form.addEventListener("submit", function (event) {
     // Username Validation
 
     if (!usernameRegex.test(username)) {
-        alert("Username must contain exactly 8 alphanumeric characters.");
+        alert("Username must contain 5-20 characters.");
         return;
     }
 
