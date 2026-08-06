@@ -8,16 +8,14 @@ function addTask()
 
     if(date == "")
     {
-        alert("Select Date");
-        return;
+        date = "No Date";
     }
 
     if(time == "")
     {
-        alert("Select Time");
-        return;
+        time = "--:--";
     }
-
+    
     if(task == "")
     {
         alert("Enter Task");
@@ -98,16 +96,21 @@ function display()
 
             btn.innerHTML="Delete";
 
-            btn.onclick = function()
+            btn.onclick = function ()
             {
-                data[date].splice(i,1);
+                let answer = confirm("Delete this task?");
 
-                if(data[date].length==0)
+                if(answer)
                 {
-                    delete data[date];
-                }
+                    data[date].splice(i,1);
 
-                display();
+                    if(data[date].length == 0)
+                    {
+                        delete data[date];
+                    }
+
+                    display();
+                }
             };
 
             li.appendChild(btn);
