@@ -15,7 +15,7 @@ function addTask()
     {
         time = "--:--";
     }
-    
+
     if(task == "")
     {
         alert("Enter Task");
@@ -26,8 +26,6 @@ function addTask()
     {
         data[date] = [];
     }
-
-    // Duplicate checking
 
     for(let i=0;i<data[date].length;i++)
     {
@@ -43,8 +41,6 @@ function addTask()
         time: time,
         task: task
     });
-
-    // Sort by time
 
     data[date].sort(function(a,b)
     {
