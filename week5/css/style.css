@@ -81,3 +81,12 @@ button {
 button:hover {
     background-color: #1e88e5;
 }
+
+.box[data-country="Danger"].revealed {
+    background-color: #e53935;
+    color: white;
+}
+
+.box[data-country="Danger"].revealed:hover {
+    background-color: #c62828;
+}
