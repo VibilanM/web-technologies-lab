@@ -8,7 +8,6 @@ function Speakers() {
 
           <div className="speaker-card">
             <div className="speaker-image">
-              👨‍🏫
             </div>
 
             <h3>Dr. Arun Kumar</h3>
@@ -17,7 +16,6 @@ function Speakers() {
 
           <div className="speaker-card">
             <div className="speaker-image">
-              👩‍💻
             </div>
 
             <h3>Dr. Priya Sharma</h3>
@@ -26,7 +24,6 @@ function Speakers() {
 
           <div className="speaker-card">
             <div className="speaker-image">
-              👨‍🔬
             </div>
 
             <h3>Dr. Ravi Menon</h3>
