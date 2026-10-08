@@ -65,3 +65,42 @@ router.get("/:dept", async (req, res) => {
     }
 });
 
+router.put("/", async (req, res) => {
+    try {
+        const studentId = req.query.studentId;
+
+        if (!studentId) {
+            return res.status(400).json({
+                success: false,
+                message: "Please provide student ID"
+            });
+        }
+        
+        const student = await Student.findOneAndUpdate(
+            { studentId: studentId },
+            req.body,
+            {
+                new: true,
+                runValidators: true
+            }
+        );
+
+        if (!student) {
+            return res.status(404).json({
+                success: false,
+                message: "Student not found"
+            });
+        }
+
+        res.status(200).json({
+            success: true,
+            data: student
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: error.message
+        });
+    }
+});
+
