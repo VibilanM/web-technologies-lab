@@ -104,3 +104,31 @@ router.put("/", async (req, res) => {
     }
 });
 
+router.delete("/", async (req, res) => {
+    try {
+        const studentId = req.query.studentId;
+
+        if (!studentId) {
+            return res.status(400).json({
+                error: "studentId query parameter is required"
+            });
+        }
+
+        const student = await Student.findOneAndDelete({
+            studentId: studentId
+        });
+
+        if (!student) {
+            return res.status(404).json({
+                error: "Student not found"
+            });
+        }
+
+        res.status(204).send();
+
+    } catch (error) {
+        res.status(500).json({
+            error: "Database error"
+        });
+    }
+});
