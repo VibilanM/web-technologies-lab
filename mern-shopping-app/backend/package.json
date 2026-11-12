@@ -1,0 +1,20 @@
+{
+  "name": "mern-shopping-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Exercise-8 MERN Shopping App",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "keywords": ["mern", "shopping-app", "express", "mongoose"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "mongoose": "^9.11.1"
+  }
+}
+

@@ -1,5 +1,19 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!**/.env.example
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+
+# Project-specific ignored assets/files
 images/
 week3/AnimalImageViewer/images/
-week6/conference-app/node_modules/
-week8/node_modules
-week8/.env
+Exercise-8.pdf

@@ -1,0 +1,16 @@
+{
+  "name": "mern-shopping-app",
+  "version": "1.0.0",
+  "description": "Exercise-8: Development of a Simple Shopping Application Using the MERN Stack",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "backend": "cd backend && npm start",
+    "seed": "cd backend && node seed.js",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "keywords": ["mern", "mongodb", "express", "react", "node"],
+  "author": "",
+  "license": "ISC"
+}
+
